@@ -1,9 +1,15 @@
 fun main(args: Array<String>) {
     var angka: String
-    do {
-        print("Masukan Angka Berapa saja kecuali 5: ")
+    var teks : String
+    print("Hallo Silahkan ketik mulai untuk menjalankan program: ")
+    teks = readLine()!!
+    while(teks == "mulai") {
+        print("Masukan Angka Berapa saja kecuali 0 : ")
         angka = readLine()!!
-
-    } while (angka != "5")
-    println("Kamu mengetik angka 5 Silahkan Coba Lagi ")
+        if(angka == "0") {
+            break 
+        }else{
+            continue
+        }
+    }
 }
